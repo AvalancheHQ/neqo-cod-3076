@@ -77,4 +77,5 @@ jobs:
         with:
           mode: ${{ matrix.bench.mode }}
           run: cargo codspeed run
+          runner-version: branch:main
           token: ${{ secrets.CODSPEED_TOKEN }} # zizmor: ignore[secrets-outside-env]
